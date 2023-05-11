@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Q1;
+         let firstName = prompt("What is your First Name?");
+         let lastName = prompt("What is your last Name?");
+         let fullName = firstName + " " + lastName;
+         alert ("Hello " + fullName);
+        //end;
+
+
+        //Q2;
+        let favMobModel = prompt("what is favourite mobile phone?");
+        let lengthOfInput = favMobModel.length;
+        document.write("<h3>Q2</h3>");
+        document.write("My favourite phone is: " + favMobModel + "<br>");
+        document.write("Length of string: " + lengthOfInput);
+        //end;
+        
+        //Q3;
+         let word = "pakistani";
+         let index = word.indexOf("n");
+        document.write("<h3>Q3</h3>");
+        document.write("String " + word + "<br>");
+        document.write("Index of 'n': " + index);
+        
+        //end;
+        
+        //Q4;
+        let word1 = "Hello World";
+        let lastIndex = word.lastIndexOf("l");
+        document.write("<h3>Q4</h3>");
+        document.write("String " + word1 + "<br>");
+        document.write("Index of 'I': " + lastIndex);
+         //end;
+         
+         //Q5;
+         let word2 = "pakistani";
+         let indexOf = word.charAt(3);
+         document.write("<h3>Q5</h3>");
+         document.write("String " + word2 + "<br>");
+         document.write("Character at index 3: " + indexOf);
+        //end;
+        
+        
+        //Q6;
+        
+        let firstName1 = prompt("What is your First Name?");
+        let lastName1 = prompt("What is your last Name?");
+        let fullName1 = firstName1.concat(" ",lastName1);
+        alert (fullName1);
+        
+        //Q7;
+        
+        let city = "hyderabad";
+        let city2 = city.replace("hyder", "islam");
+        document.write("<h3>Q7</h3>");
+        document.write("City: " + city + "<br>");
+        document.write("After replacement: " + city2);
+        //end;
+        
+        
+        //Q8;
+        
+        let message = "Ali and Sami are bestfriends. They play cricket and football together";
+        let afterReplace = message.replace(/and/g , "&");
+        document.write("<h3>Q8</h3>");
+        document.write("Message: " + message + "<br>");
+        document.write("After replacement: " + afterReplace);
+        //end;
+        
+        
+        //Q9;
+        let num = "472";
+        
+        document.write("<h3>Q9</h3>");
+        document.write("Value: " + num + "<br>");
+        document.write("Type: " + typeof(num) + "<br>");
+        
+        let convert = Number(num);
+        document.write("Value: " + num + "<br>");
+        document.write("Type: " + typeof(convert));
+        //end;
+        
+        
+        //Q10;
+        
+        let userInput = prompt("Enter your name");
+        let upperCase = userInput.toUpperCase();
+        
+        document.write("<h3>Q10</h3>");
+        document.write("User input: " + userInput + "<br>");
+        document.write("Upper case: " + upperCase);
+        //end;
+        
+        //Q11;
+        
+        let input1 = prompt("Enter your name");
+        let title = input1.charAt(0);
+        let title1 = title.toUpperCase() + input1.slice(1);
+        document.write("<h3>Q11</h3>");
+        document.write("User input: " + input1 + "<br>");
+        document.write("Title case: " + title1);
+        //end;
+        
+        //Q12;
+        
+        let num1 = 35.36;
+        let toStr = num1.toString();
+        let string = toStr.replace(".", "");
+        
+        document.write("<h3>Q12</h3>");
+        document.write("Number: " + num1 + "<br>");
+        document.write("Result: " + string);
+        //end;
+        
+        //Q13;
+       
+        let username = prompt("Enter your username");
+        
+        if (username.includes("@") || username.includes(".") || username.includes("!") || username.includes(",")){
+            alert ("Invalid username");
+
+        }
+        else {
+            alert("Valid username");
+        }
+
+        //end;
+        
+        //Q14;
+        let a = ["cake", "apple pie", "cookie", "chips", "patties"];
+        let userInput1 = prompt("What do you want Sir/Mam");
+        userInput1 = userInput1.toLowerCase();
+        let found = false;
+        for (let i = 0; i < a.length; i++){
+            if (userInput1 === a[i]){
+                found = true;
+                break;
+
+
+            }
+        }
+        if(found){
+            alert ("Yes " + userInput1 + " is available");
+        }
+        else {
+            alert ("Sorry " + userInput1 + " is not available");
+        }
+
+        //end;
+
+        //Q15;
+        let userInput2 = prompt("Enter your password");
+
+        if (userInput2.length < 6){
+            alert ("Password atleast contains 6 characters");
+        }
+        else if (!isNaN(userInput2.charAt(0))){
+            alert ("Password should not start with a number");
+        }
+        else if (!/^[a-zA-Z0-9]+$/.test(userInput2)){
+            alert ("Password must contain only numbers and alphabets");
+            
+        }
+        else {
+            alert ("Valid Password");
+        }
+
+        //end;
+
+        //Q16;
+        
+        let university = "University of Karachi";
+        
+        university = university.split("");
+        
+        document.write("<h3>Q16</h3>");
+        for (let i = 0; i < university.length; i++){
+            document.write(university[i] + "<br>")
+        }
+
+        //end;
+
+        //Q17;
+
+        let word3 = "Pakistan";
+        let lastIndex1 =word3.charAt(word3.length - 1);
+        document.write("<h3>Q17</h3>");
+        document.write("Input: " + word3 + "<br>");
+        document.write("Last character of Input: " + lastIndex1);
+
+        //end;
+
+        //Q18;
+
+        let str = "The quick brown fox jumps over the lazy dog";
+        let words = str.split(" ");
+        let count = 0;
+        
+        for (let i = 0; i < word.length; i++){
+            if (words[i].toLowerCase() === "the"){
+                count++;
+
+            }
+        }
+        
+        document.write("<h3>Q18</h3>");
+        document.write("Text: " + str + "<br>");
+        document.write ("There are " + count + " occurence's of word 'the'");
+
+        //end;
+
+
+        
+        </script>
+</body>
+
+</html>
